@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: eureka-server
+
+server:
+  port: 8000
+
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${server.port}
+    lease-renewal-interval-in-seconds: 5
+  client:
+    register-with-eureka:  false
+    fetch-registry:  false
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/

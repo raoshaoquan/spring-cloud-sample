@@ -1,0 +1,10 @@
+.gradle
+.idea
+.DS_Store
+*.iml
+target
+build
+out
+bin
+logs
+*.tar.gz

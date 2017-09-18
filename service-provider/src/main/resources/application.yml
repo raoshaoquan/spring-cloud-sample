@@ -1,21 +1,2 @@
-spring:
-  application:
-    name: "service-provider"
-
 server:
   port: 8087
-
-eureka:
-  instance:
-    prefer-ip-address: true
-    instance-id: ${spring.application.name}:${server.port}
-  client:
-    service-url:
-      defaultZone: http://localhost:8000/eureka
-
-security:
-  basic:
-    enabled: false
-  user:
-    name: root
-    password: 123456
